@@ -32,7 +32,13 @@ exports[`GenreQuestionScreen is rendered correctly 1`] = `
         cx="390"
         cy="390"
         r="370"
-        style="filter: url(#blur); transhtmlForm: rotate(-90deg) scaleY(-1); transhtmlForm-origin: center"
+        style={
+          Object {
+            "filter": "url(#blur)",
+            "transform": "rotate(-90deg) scaleY(-1)",
+            "transformOrigin": "center",
+          }
+        }
       />
     </svg>
     <div
@@ -73,10 +79,9 @@ exports[`GenreQuestionScreen is rendered correctly 1`] = `
         <div
           className="track__status"
         >
-          <audio>
-            src=
-            https://upload.wikimedia.org/wikipedia/commons/4/4e/BWV_543-fugue.ogg
-          </audio>
+          <audio
+            src="https://upload.wikimedia.org/wikipedia/commons/4/4e/BWV_543-fugue.ogg"
+          />
         </div>
         <div
           className="game__answer"
@@ -108,10 +113,9 @@ exports[`GenreQuestionScreen is rendered correctly 1`] = `
         <div
           className="track__status"
         >
-          <audio>
-            src=
-            https://upload.wikimedia.org/wikipedia/commons/4/4e/BWV_543-fugue.ogg
-          </audio>
+          <audio
+            src="https://upload.wikimedia.org/wikipedia/commons/4/4e/BWV_543-fugue.ogg"
+          />
         </div>
         <div
           className="game__answer"
@@ -143,10 +147,9 @@ exports[`GenreQuestionScreen is rendered correctly 1`] = `
         <div
           className="track__status"
         >
-          <audio>
-            src=
-            https://upload.wikimedia.org/wikipedia/commons/4/4e/BWV_543-fugue.ogg
-          </audio>
+          <audio
+            src="https://upload.wikimedia.org/wikipedia/commons/4/4e/BWV_543-fugue.ogg"
+          />
         </div>
         <div
           className="game__answer"
@@ -178,10 +181,9 @@ exports[`GenreQuestionScreen is rendered correctly 1`] = `
         <div
           className="track__status"
         >
-          <audio>
-            src=
-            https://upload.wikimedia.org/wikipedia/commons/4/4e/BWV_543-fugue.ogg
-          </audio>
+          <audio
+            src="https://upload.wikimedia.org/wikipedia/commons/4/4e/BWV_543-fugue.ogg"
+          />
         </div>
         <div
           className="game__answer"
@@ -198,96 +200,6 @@ exports[`GenreQuestionScreen is rendered correctly 1`] = `
           <label
             className="game__check"
             htmlFor="answer-3"
-          >
-            Отметить
-          </label>
-        </div>
-      </div>
-      <div
-        className="track"
-      >
-        <button
-          className="track__button track__button--play"
-          type="button"
-        />
-        <div
-          className="track__status"
-        >
-          <audio />
-        </div>
-        <div
-          className="game__answer"
-        >
-          <input
-            className="game__input visually-hidden"
-            id="answer-2"
-            name="answer"
-            type="checkbox"
-            value="answer-1"
-          />
-          <label
-            className="game__check"
-            htmlFor="answer-2"
-          >
-            Отметить
-          </label>
-        </div>
-      </div>
-      <div
-        className="track"
-      >
-        <button
-          className="track__button track__button--pause"
-          type="button"
-        />
-        <div
-          className="track__status"
-        >
-          <audio />
-        </div>
-        <div
-          className="game__answer"
-        >
-          <input
-            className="game__input visually-hidden"
-            id="answer-3"
-            name="answer"
-            type="checkbox"
-            value="answer-1"
-          />
-          <label
-            className="game__check"
-            htmlFor="answer-3"
-          >
-            Отметить
-          </label>
-        </div>
-      </div>
-      <div
-        className="track"
-      >
-        <button
-          className="track__button track__button--play"
-          type="button"
-        />
-        <div
-          className="track__status"
-        >
-          <audio />
-        </div>
-        <div
-          className="game__answer"
-        >
-          <input
-            className="game__input visually-hidden"
-            id="answer-4"
-            name="answer"
-            type="checkbox"
-            value="answer-1"
-          />
-          <label
-            className="game__check"
-            htmlFor="answer-4"
           >
             Отметить
           </label>
