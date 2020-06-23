@@ -1,6 +1,8 @@
 import React, {PureComponent} from "react";
 import PropTypes from "prop-types";
 import {GameType} from "../../const.js";
+import AudioPlayer from "../audio-player/audio-player.jsx";
+
 
 class GenreQuestionScreen extends PureComponent {
   constructor(props) {
@@ -31,7 +33,8 @@ class GenreQuestionScreen extends PureComponent {
             <div key={`${i}-${answer.src}`} className="track">
               <button className="track__button track__button--play" type="button"/>
               <div className="track__status">
-                <audio
+                <AudioPlayer
+                  isPlaying={true}
                   src={answer.src}
                 />
               </div>
