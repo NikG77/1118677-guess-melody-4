@@ -7,16 +7,19 @@ import {Provider} from "react-redux";
 import {reducer} from "./reducer.js";
 
 const Settings = {
-  ERROR_COUNT: 3,
+  ERRORS_COUNT: 3,
 };
 
-const store = createStore(reducer);
+const store = createStore(
+    reducer,
+    window.__REDUX_DEVTOOLS_EXTENSION__ ? window.__REDUX_DEVTOOLS_EXTENSION__() : (f) => f
+);
 
 
 ReactDom.render(
     <Provider store={store}>
       <App
-        errorsCount={Settings.ERROR_COUNT}
+        errorsCount={Settings.ERRORS_COUNT}
         questions={questions}
       />
     </Provider>,
