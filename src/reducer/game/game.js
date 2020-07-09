@@ -1,5 +1,5 @@
 import {extend} from "../../utils.js";
-import {GameType} from "../../api";
+import {GameType} from "../../const.js";
 
 const initialState = {
   mistakes: 0,

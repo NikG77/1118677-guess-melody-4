@@ -1,59 +1,5 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Render App Render App 1`] = `
-<section
-  className="welcome"
->
-  <div
-    className="welcome__logo"
-  >
-    <img
-      alt="Угадай мелодию"
-      height="83"
-      src="img/melody-logo.png"
-      width="186"
-    />
-  </div>
-  <button
-    className="welcome__button"
-    onClick={[Function]}
-  >
-    <span
-      className="visually-hidden"
-    >
-      Начать игру
-    </span>
-  </button>
-  <h2
-    className="welcome__rules-title"
-  >
-    Правила игры
-  </h2>
-  <p
-    className="welcome__text"
-  >
-    Правила просты:
-  </p>
-  <ul
-    className="welcome__rules-list"
-  >
-    <li>
-      Нужно ответить на все вопросы.
-    </li>
-    <li>
-      Можно допустить 
-      3
-       ошибки.
-    </li>
-  </ul>
-  <p
-    className="welcome__text"
-  >
-    Удачи!
-  </p>
-</section>
-`;
-
 exports[`Render App Render ArtistQuestionScreen 1`] = `
 <section
   className="game game--artist"
@@ -97,7 +43,11 @@ exports[`Render App Render ArtistQuestionScreen 1`] = `
     </svg>
     <div
       className="game__mistakes"
-    />
+    >
+      <div
+        className="wrong"
+      />
+    </div>
   </header>
   <section
     className="game__screen"
@@ -203,6 +153,89 @@ exports[`Render App Render ArtistQuestionScreen 1`] = `
 </section>
 `;
 
+exports[`Render App Render AuthScreen 1`] = `
+<section
+  className="login"
+>
+  <div
+    className="login__logo"
+  >
+    <img
+      alt="Угадай мелодию"
+      height="83"
+      src="img/melody-logo.png"
+      width="186"
+    />
+  </div>
+  <h2
+    className="login__title"
+  >
+    Вы настоящий меломан!
+  </h2>
+  <p
+    className="login__text"
+  >
+    Хотите узнать свой результат? Представтесь!
+  </p>
+  <form
+    action=""
+    className="login__form"
+    onSubmit={[Function]}
+  >
+    <p
+      className="login__field"
+    >
+      <label
+        className="login__label"
+        htmlFor="name"
+      >
+        Логин
+      </label>
+      <input
+        className="login__input"
+        id="name"
+        name="name"
+        type="text"
+      />
+    </p>
+    <p
+      className="login__field"
+    >
+      <label
+        className="login__label"
+        htmlFor="password"
+      >
+        Пароль
+      </label>
+      <input
+        className="login__input"
+        id="password"
+        name="password"
+        type="text"
+      />
+      <span
+        className="login__error"
+      >
+        Неверный пароль
+      </span>
+    </p>
+    <button
+      className="login__button button"
+      type="submit"
+    >
+      Войти
+    </button>
+  </form>
+  <button
+    className="replay"
+    onClick={[Function]}
+    type="button"
+  >
+    Сыграть ещё раз
+  </button>
+</section>
+`;
+
 exports[`Render App Render GameOverScreen 1`] = `
 <section
   className="result"
@@ -280,7 +313,11 @@ exports[`Render App Render GenreQuestionScreen 1`] = `
     </svg>
     <div
       className="game__mistakes"
-    />
+    >
+      <div
+        className="wrong"
+      />
+    </div>
   </header>
   <section
     className="game__screen"
@@ -440,6 +477,60 @@ exports[`Render App Render GenreQuestionScreen 1`] = `
       </button>
     </form>
   </section>
+</section>
+`;
+
+exports[`Render App Render WelcomeScreen 1`] = `
+<section
+  className="welcome"
+>
+  <div
+    className="welcome__logo"
+  >
+    <img
+      alt="Угадай мелодию"
+      height="83"
+      src="img/melody-logo.png"
+      width="186"
+    />
+  </div>
+  <button
+    className="welcome__button"
+    onClick={[Function]}
+  >
+    <span
+      className="visually-hidden"
+    >
+      Начать игру
+    </span>
+  </button>
+  <h2
+    className="welcome__rules-title"
+  >
+    Правила игры
+  </h2>
+  <p
+    className="welcome__text"
+  >
+    Правила просты:
+  </p>
+  <ul
+    className="welcome__rules-list"
+  >
+    <li>
+      Нужно ответить на все вопросы.
+    </li>
+    <li>
+      Можно допустить 
+      3
+       ошибки.
+    </li>
+  </ul>
+  <p
+    className="welcome__text"
+  >
+    Удачи!
+  </p>
 </section>
 `;
 
