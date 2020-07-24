@@ -24,13 +24,13 @@ exports[`Render App Render ArtistQuestionScreen 1`] = `
   >
     У вас закончились все попытки. Ничего, повезёт в следующий раз!
   </p>
-  <button
+  <a
     className="replay"
+    href="/"
     onClick={[Function]}
-    type="button"
   >
     Попробовать ещё раз
-  </button>
+  </a>
 </section>
 `;
 
@@ -141,13 +141,13 @@ exports[`Render App Render GameOverScreen 1`] = `
   >
     У вас закончились все попытки. Ничего, повезёт в следующий раз!
   </p>
-  <button
+  <a
     className="replay"
+    href="/"
     onClick={[Function]}
-    type="button"
   >
     Попробовать ещё раз
-  </button>
+  </a>
 </section>
 `;
 
@@ -160,7 +160,8 @@ exports[`Render App Render GenreQuestionScreen 1`] = `
   >
     <a
       className="game__back"
-      href="#"
+      href="/"
+      onClick={[Function]}
     >
       <span
         className="visually-hidden"
@@ -449,12 +450,12 @@ exports[`Render App Render WinScreen 1`] = `
     0
      ошибки
   </p>
-  <button
+  <a
     className="replay"
+    href="/"
     onClick={[Function]}
-    type="button"
   >
     Сыграть ещё раз
-  </button>
+  </a>
 </section>
 `;
