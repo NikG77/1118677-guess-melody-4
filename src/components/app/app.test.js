@@ -123,6 +123,7 @@ describe(`Render App`, () => {
               onWelcomeButtonClick={() => {}}
               resetGame={() => {}}
               step={1}
+              mistakes={3}
             />
           </Provider>, {
             createNodeMock: () => {

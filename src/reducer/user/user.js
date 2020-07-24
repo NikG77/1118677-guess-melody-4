@@ -1,6 +1,12 @@
 const AuthorizationStatus = {
   AUTH: `AUTH`,
   NO_AUTH: `NO_AUTH`,
+  BAD_REQUEST: `BAD_REQUEST`,
+};
+
+export const Error = {
+  UNAUTHORIZED: 401,
+  BAD_REQUEST: 400
 };
 
 const initialState = {
@@ -37,8 +43,8 @@ const Operation = {
       .then(() => {
         dispatch(ActionCreator.requireAuthorization(AuthorizationStatus.AUTH));
       })
-      .catch((err) => {
-        throw err;
+      .catch(() => {
+        dispatch(ActionCreator.requireAuthorization(AuthorizationStatus.NO_AUTH));
       });
   },
 
@@ -49,6 +55,13 @@ const Operation = {
     })
       .then(() => {
         dispatch(ActionCreator.requireAuthorization(AuthorizationStatus.AUTH));
+      })
+      .catch((err) => {
+        const {response} = err;
+        if (response.status === Error.BAD_REQUEST) {
+          dispatch(ActionCreator.requireAuthorization(AuthorizationStatus.BAD_REQUEST));
+        }
+        throw err;
       });
   },
 };

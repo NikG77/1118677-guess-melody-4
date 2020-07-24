@@ -23,6 +23,10 @@ const Operation = {
     return api.get(`/questions`)
       .then((response) => {
         dispatch(ActionCreator.loadQuestions(response.data));
+      })
+      .catch((err) => {
+
+        throw err;
       });
   },
 };
